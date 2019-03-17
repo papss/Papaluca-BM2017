@@ -1,0 +1,67 @@
+# include random
+
+class Player(object):
+
+    def __init__(self):
+        self.set_up_player()
+
+    def level_up(self):
+        print "You gained a life!"
+        self.lives += 1
+
+    def collect_treasure(self, quantity=1):
+        self.gold_coins += quantity
+        if self.gold_coins % 10 == 0:
+            self.level_up()
+
+    def do_battle(self, damage):
+        print "You've taken {0} damage!".format(damage)
+        self.health_points -= damage
+        if self.health_points < 1:
+            print "You lost a life!"
+            self.lives -= 1
+            self.health_points = 10
+        if self.lives < 1:
+            self.restart()
+
+    def restart(self):
+        print "You lose. New Game!"
+        self.set_up_player()
+
+    def set_up_player(self):
+        self.lives = 5
+        self.gold_coins = 0
+        self.health_points = 10
+
+p = Player()
+#
+# monsters = [
+#     { 'name': 'Septahydra', 'power': 7, 'reward': 9 },
+#     { 'name': 'Troll', 'power': 4, 'reward': 3 }
+# ]
+#
+# while True:
+#     input = raw_input('Explore or quit?\n')
+#     if input == "quit":
+#         print "you have left the game"
+#         break
+#     elif input == "explore"
+#         monster = random.choice(monsters)
+#         print "You are fighting the {0}!".format(monster['name'])
+#         def do_battle(monsters)
+
+
+print p.gold_coins
+print p.lives
+p.collect_treasure()
+print p.gold_coins
+p.collect_treasure(9)
+print p.gold_coins
+print p.lives
+p.do_battle(10)
+p.do_battle(10)
+p.do_battle(10)
+p.do_battle(10)
+p.do_battle(10)
+p.do_battle(10)
+print p.lives

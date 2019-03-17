@@ -1,0 +1,39 @@
+BACKGROUND TASKS AND SCHEDULED TASKS
+
+Examples of scheduled tasks:
+
+  -sending out emails
+  -running tests
+  -generate reports
+    -ie new user reports
+
+Crontab:
+  -a list of commands you want to run on a regular schedule
+  -must be edited in a terminal based text editor
+    -like nano
+
+Crontab syntax:
+
+22    10    *   *   *   echo 'foo' > ~/bar.txt
+
+Generate a report:
+
+22    10    *   *   * cd ~/rails/app/directory bundle exec rake reports:new_users
+
+  -of course, you actually need to write out a report method in rails first:
+
+    namespace :reports do
+      desc "generates new user reports"
+      task new_users: [:environment] do
+        sleep 5
+        puts "we did it!"
+      end
+    end
+
+Whenever:
+  -ruby gem which simplifies the syntax for writing out cron jobs in Ruby
+  -
+
+Active Job:
+
+-Active Job is a rails method for generating active jobs? 

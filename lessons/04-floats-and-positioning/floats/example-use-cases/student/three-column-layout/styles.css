@@ -1,0 +1,25 @@
+/*
+
+  Insert styles here.
+*/
+  .column {
+      float: left;
+      width: 32%;
+      padding: 20px;
+      background-color: antiquewhite;
+  }
+
+  .column.middle {
+      margin: 0 2%;
+  }
+
+  #columns {
+      background-color: hotpink;
+  }
+
+/*
+  Open
+    /floats/example-use-cases/final/<example name>/index.html
+    to see what you're to recreate.
+
+*/

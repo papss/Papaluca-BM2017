@@ -1,0 +1,62 @@
+header {
+    position: fixed;
+    background: orange;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid grey;
+}
+
+div#container {
+    padding-top: 100px;
+}
+
+2 {}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.features {
+    width: 45%;
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+}
+
+.feature.sushi-donuts {
+    margin: 2%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.features {
+    width: 45%;
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+}
+
+.feature.sushi-donuts {
+    margin: 2%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
